@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Judul</title>
+</head>
+<body class="bg-[#394867] flex items-center justify-center w-screen h-screen p-36">
+    <div class="Kotak Konversi font-semibold bg-[#F1F6F9] p-8 rounded-lg shadow-lg shadow-black">
+        <div>
+            <p class=" justify-start text-2xl  mb-2">Konverter Suhu</p>
+        </div>
+        <!-- input -->
+        <div class="grid grid-cols-2 gap-4">
+            <div class="input">
+                <label for="derajat-awal" class="">Derajat:</label>
+                <input type="number" name="derajat" id="derajat-awal" class="w-full p-2 border rounded">
+            </div>
+            
+            <div class="input">
+                <label for="tipe-temp-awal" class="">Tipe Awal:</label>
+                <select name="Temperatur" id="tipe-temp-awal" class="w-full p-2 border rounded" autocomplete="on">
+                    <option value="celcius" id="celcius">Celcius</option>
+                    <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin" id="kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-2 grid-rows-1 gap-4  mt-4 items-center">
+            <div class="">
+                <label for="tipe-temp-akhir" class="">Tipe Akhir:</label>
+                <select name="Temperatur" id="tipe-temp-akhir" class="w-full p-2 border rounded" autocomplete="on">
+                    <option value="celcius" id="celcius">Celcius</option>
+                    <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin" id="kelvin">Kelvin</option>
+                </select>
+            </div>
+        
+            <button class="mx-20 col-span-2 p-2 shadow-md mt-4 shadow-black bg-[#394867] text-white rounded-lg">Konversi</button>
+        </div>
+        <!-- output -->
+        <div class="col-span-2 mt-4">
+            <!-- Result Div -->
+            <div class=" p-4 rounded-lg text-center mx-auto">
+                <!-- Your existing result content goes here -->
+                <span class="header-hasil">Hasil</span>
+                <h2 class="nilai-derajat border-b-2 border-black mt-2" id="derajat-akhir"></h2>
+                <div class="my-4 p-4">
+                    <h2 class="rumus" id="rumus"></h2>
+                </div>
+            </div>
+        </div>
+<!-- JS -->
+<script src="app.js"></script>
+</body>
+</html>
